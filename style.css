@@ -10,3 +10,83 @@ body {
 }
 
 /* Add styles here! */
+:root {
+ --space-8: 8px;
+ --space-16: 16px;
+ --space-24: 24px;
+ --space-32: 32px;
+ --space-48: 48px;
+ --space-64: 64px;
+ --space-96: 96px;
+ --space-128: 128px;
+
+  --font-size-sm: 1rem;
+  --font-size-md: 1.25rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2rem;
+
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+
+  --gray-600: hsl(0deg, 0%, 0%);
+  --gray-500: hsl(0deg, 0%, 10%);
+  --gray-400: hsl(0deg, 0%, 30%);
+  --gray-300: hsl(0deg, 0%, 40%);
+  --gray-200: hsl(0deg, 0%, 60%);
+  --gray-100: hsl(0deg, 0%, 100%);
+
+}
+
+p {
+  font-size: var(--font-size-md);
+  margin: var(--space-16) 0;
+}
+
+strong {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+header {
+  .title {
+    margin-bottom: var(--space-48);
+  }
+
+  .intro-chunk {
+    max-width: 415px;
+    margin-block-start: var(--space-96);
+    margin-block-end: var(--space-64);
+    padding-inline: var(--space-24);
+  }
+}
+
+main {
+  background-color: var(--gray-300);
+  border-top: 8px solid var(--gray-200);
+  border-bottom: 8px solid var(--gray-200);
+
+  section {
+    margin-block: var(--space-64);
+  }
+}
+
+.indented-heading {
+  max-width: fit-content;
+  background-color: var(--color-secondary-light);
+  border-bottom: 8px solid var(--color-secondary-dark);
+  padding: var(--space-16) var(--space-32);
+  margin: 0 0 0 calc(var(--space-32) * -1);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.card {
+  background-color: var(--gray-100);
+  padding: var(--space-8) var(--space-24) var(--space-24);
+}
+
+
